@@ -1,0 +1,28 @@
+{
+    "name": "tahicz/symfony-status-logger-bundle",
+    "description": "Bundle for logging and reporting health of API endpoints and jobs.",
+    "type": "symfony-bundle",
+    "require-dev": {
+        "php": "^8.2",
+        "friendsofphp/php-cs-fixer": "^3.29"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tahicz\\SymfonyStatusLoggerBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jan Mlatec",
+            "email": "tahicz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/console": "^6.3",
+        "symfony/framework-bundle": "^6.3",
+        "symfony/uid": "^6.3",
+        "doctrine/orm": "^2.16"
+    }
+}
