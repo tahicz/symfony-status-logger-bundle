@@ -1,0 +1,1 @@
+# symfony-status-logger-bundle
