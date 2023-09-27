@@ -16,6 +16,7 @@ class StatusExport
     public function __construct(private readonly StatusLogRepository $statusLogRepository)
     {
         $this->statusCollection = new ArrayCollection();
+		$this->statusCollection->add(['requestTime'=>time()]);
     }
 
     public function addStatus(ServiceStatus $export): void
