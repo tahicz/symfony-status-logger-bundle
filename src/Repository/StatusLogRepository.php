@@ -22,7 +22,8 @@ class StatusLogRepository extends EntityRepository
 {
     public function __construct(EntityManagerInterface $em)
 	{
-		parent::__construct($em, StatusLog::class);
+		$metadata = new ClassMetadata(StatusLog::class);
+		parent::__construct($em, $metadata);
 	}
 
 	public function save(StatusLog $entity, bool $flush = false): void
