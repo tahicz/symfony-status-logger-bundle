@@ -12,17 +12,8 @@ class TahiczStatusLoggerExtension extends Extension
 	 */
 	public function load(array $configs, ContainerBuilder $container): void
 	{
-//		$loader = new PhpFileLoader(
-//			$container,
-//			new FileLocator(__DIR__.'/../Resources/config')
-//		);
-//		$loader->load('tahicz-status-logger.php');
-
-//		$loader = new YamlFileLoader(
-//			$container,
-//			new FileLocator(__DIR__.'/../Resources/config')
-//		);
-//		$loader->load('routes.yaml');
+		$configuration = new Configuration();
+		$this->processConfiguration($configuration, $configs);
 
 		$container->setParameter('tahicz_status_logger.path', 'api/status');
 	}
