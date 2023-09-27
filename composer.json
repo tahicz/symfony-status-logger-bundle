@@ -22,7 +22,7 @@
     "require": {
         "symfony/console": "^5.4.0",
         "symfony/framework-bundle": "^5.4.0",
-        "symfony/uid": "^6.3",
+        "symfony/uid": "^5.4.0",
         "doctrine/orm": "^2.14.0"
     }
 }
