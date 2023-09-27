@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tahicz\SymfonyStatusLoggerBundle\Controller;
+namespace Tahicz\SymfonyStatusLoggerBundle;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
