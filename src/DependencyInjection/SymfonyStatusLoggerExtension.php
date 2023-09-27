@@ -13,6 +13,6 @@ class SymfonyStatusLoggerExtension extends Extension
 		$configuration = new Configuration();
 		$config = $this->processConfiguration($configuration, $configs);
 
-		$container->setParameter('tahicz_status_logger.path', $config['path']);
+		$container->setParameter('symfony_status_logger.path', $config['path']);
 	}
 }

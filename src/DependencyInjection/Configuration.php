@@ -11,7 +11,7 @@ class Configuration implements ConfigurationInterface
 	 */
 	public function getConfigTreeBuilder(): TreeBuilder
 	{
-		$treeBuilder = new TreeBuilder('tahicz_status_logger');
+		$treeBuilder = new TreeBuilder('symfony_status_logger');
 		$root = $treeBuilder->getRootNode();
 		$root->children()
 			->scalarNode('path')
