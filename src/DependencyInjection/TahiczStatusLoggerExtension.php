@@ -13,8 +13,8 @@ class TahiczStatusLoggerExtension extends Extension
 	public function load(array $configs, ContainerBuilder $container): void
 	{
 		$configuration = new Configuration();
-		$this->processConfiguration($configuration, $configs);
+		$config = $this->processConfiguration($configuration, $configs);
 
-		$container->setParameter('tahicz_status_logger.path', 'api/status');
+		$container->setParameter('tahicz_status_logger.path', $config['path']);
 	}
 }
