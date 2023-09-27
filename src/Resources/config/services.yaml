@@ -8,6 +8,10 @@ services:
         resource: '../../Controller'
         tags: ['controller.service_arguments']
 
+    Tahicz\SymfonyStatusLoggerBundle\Repository\:
+        resource: '../../Repository'
+        tags: ['doctrine.repository_service']
+
     Tahicz\SymfonyStatusLoggerBundle\StatusExport\Model\ServiceStatus: ~
     Tahicz\SymfonyStatusLoggerBundle\StatusExport\StatusExport: ~
 
