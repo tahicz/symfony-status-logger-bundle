@@ -20,9 +20,9 @@ use Tahicz\SymfonyStatusLoggerBundle\Entity\StatusLog;
  */
 class StatusLogRepository extends EntityRepository
 {
-    public function __construct(EntityManagerInterface $em, ClassMetadata $class)
+    public function __construct(EntityManagerInterface $em)
 	{
-		parent::__construct($em, $class);
+		parent::__construct($em, StatusLog::class);
 	}
 
 	public function save(StatusLog $entity, bool $flush = false): void
