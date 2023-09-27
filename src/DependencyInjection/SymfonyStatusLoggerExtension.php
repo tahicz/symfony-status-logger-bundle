@@ -18,7 +18,7 @@ class SymfonyStatusLoggerExtension extends Extension
 		$loader = new XmlFileLoader($container, new FileLocator(dirname(__DIR__) . '/Resources/config'));
 		$loader->load('status-logger-config.xml');
 
-		$loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/Resources/config'));
+		$loader = new YamlFileLoader($container, new FileLocator(dirname(__DIR__) . '/Resources/config'));
 		$loader->load('services.yaml');
 
 		$configuration = new Configuration();
