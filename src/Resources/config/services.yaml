@@ -7,3 +7,7 @@ services:
     Tahicz\SymfonyStatusLoggerBundle\Controller\:
         resource: '../../Controller'
         tags: ['controller.service_arguments']
+
+    Tahicz\SymfonyStatusLoggerBundle\StatusExport\Model\ServiceStatus: ~
+    Tahicz\SymfonyStatusLoggerBundle\StatusExport\StatusExport: ~
+
