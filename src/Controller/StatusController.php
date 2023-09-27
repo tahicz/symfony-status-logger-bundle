@@ -11,7 +11,7 @@ use Tahicz\SymfonyStatusLoggerBundle\StatusExport\StatusExport;
 
 class StatusController extends AbstractController
 {
-    #[Route('api/status', name: 'api_status', methods: ['GET'])]
+    #[Route('api/status', name: 'tahicz_status_logger_status', methods: ['GET'])]
     public function status(StatusExport $statusExport): JsonResponse
     {
         return new JsonResponse($statusExport->asArray()->toArray());
