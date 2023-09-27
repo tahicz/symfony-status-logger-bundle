@@ -20,9 +20,9 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "symfony/console": "^6.3",
-        "symfony/framework-bundle": "^6.3",
+        "symfony/console": "^5.4.0",
+        "symfony/framework-bundle": "^5.4.0",
         "symfony/uid": "^6.3",
-        "doctrine/orm": "^2.16"
+        "doctrine/orm": "^2.14.0"
     }
 }
