@@ -1,5 +1,7 @@
 <?php
 
+namespace Tahicz\SymfonyStatusLoggerBundle\DependencyInjection;
+
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
@@ -15,11 +17,11 @@ class Configuration implements ConfigurationInterface
 		$root = $treeBuilder->getRootNode();
 		$root->children()
 			->scalarNode('path')
-				->info('URL path to status page.')
-				->cannotBeEmpty()
-				->defaultValue('api/status')
+			->info('URL path to status page.')
+			->cannotBeEmpty()
+			->defaultValue('api/status')
 			->end()
-		->end();
+			->end();
 
 		return $treeBuilder;
 	}
